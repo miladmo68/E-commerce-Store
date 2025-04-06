@@ -38,8 +38,9 @@ const Home = ({ onProducts }) => {
   function handleAdd(id) {
     const addedProduct = products.find((item) => item.id === id);
     setcartProducts([...cartProducts, addedProduct]);
-    // onProducts([...onProducts, addedProduct]);
+    // onProducts(addedProduct);
   }
+
   onProducts(cartProducts);
 
   return (

@@ -9,6 +9,9 @@ function App() {
   const [cartProducts, setcartProducts] = useState([]);
 
   function handleProducts(newProducts) {
+    // setcartProducts([newProducts, ...cartProducts]);
+    // setcartProducts((prevCart) => [...prevCart, newProduct]);
+
     setcartProducts(newProducts);
   }
 
